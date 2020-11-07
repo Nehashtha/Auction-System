@@ -12,7 +12,7 @@ import json
 app=Flask(__name__)
 
 # add offer from seller
-sql_host=mysql.connector.connect(host='localhost',user='root',passwd='1234', database='user_profile')
+sql_host=mysql.connector.connect(host='localhost',user='root',passwd='****', database='user_profile')
 mycursor=sql_host.cursor()
 @app.route('/sale', methods=['POST'])
 def sale_item():
